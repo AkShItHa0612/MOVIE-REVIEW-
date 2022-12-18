@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&family=Rubik+Vinyl&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: rgb(100, 96, 96);
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header
+{
+    position: relative;
+    width: 95%;
+    height: 85%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px -1px #000;
+    overflow: hidden;
+}
+header video
+{
+    position: absolute;
+    width: 100%;
+    height: 190%;
+    top: -40%;
+    z-index: -1;
+}
+header nav
+{
+    width: 100%;
+    height: 12%;
+    border: 1px solid rgb(247, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+header h2
+{
+    font-family: 'Roboto Slab', serif;
+    color: bisque;
+}
+header nav .logo_ul ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo_ul ul li
+{
+    padding: 3px 15px;
+}
+header nav .logo_ul ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+header nav .logo_ul ul li a:hover
+{
+    color: beige;
+}
+header nav .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input {
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255, .3);
+    color:rgb(78, 74, 74);
+    margin-right: 10px;
+}
+.Signin-btn
+{
+    display: flex;
+    background-color: darkgray;
+}
+header .content
+{
+position: absolute;
+color: #fff;
+margin-top: 250px;
+padding-left: 20px;
+}
+header .content h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+}
+header .content p{
+    font-size: 11px;
+    width: 350px;
+    word-break: break-all;
+}
+header .content .details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+header .content .details h6 {
+    color: rgb(255, 255, 255, .8);
+    font-size: 10px;
+    margin-right: 10px;
+}
+header .content .details h5 {
+    color: rgb(201, 194, 194);
+    font-size: 10px;
+    margin-right: 10px;
+}
+header .content .details h3 {
+    color: rgb(201, 194, 194);
+    font-size: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+header section {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: #fff;
+}
+header .content .btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    }
+header .content .btns a {
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient (90deg,#eebdff, #8079ff);
+    border-radius: 5px;
+    color:#fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+header section {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: rgb(252, 252, 252);
+}
+header section .cards{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #fff;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}

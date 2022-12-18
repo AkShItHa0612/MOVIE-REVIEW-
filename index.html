@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie App</title>
+    
+
+    <style>
+ 
+
+ body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px){
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="2015.html">2015-FILMS</a>
+            <a href="2016.html">2016-FILMS</a>
+            <a href="2017.html">2017-FILMS</a>
+            <a href="2018.html">2018-FILMS</a>
+            <a href="2019.html">2019-FILMS</a>
+            <a href="2020.html">2020-FILMS</a>
+            <a href="2021.html">2021-FILMS</a>
+            <a href="2022.html">2022-FILMS</a>
+            <a href="chat.html">For queries</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ 2015-2022</button>  
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+        
+          </script>
+        <video src="C:\Users\Pilli Akshitha\OneDrive\Desktop\movie\VID-20221217-WA0042.mp4" autoplay muted></video>
+        
+        <nav>
+            <h2>Film Forum</h2>
+            <div class="logo_ul">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movie</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Series</a></li>
+                </ul>
+                
+
+            <div>
+                <button class="Signin-btn">Sign in</button>
+                <section>
+               <h5>Popular</h5>
+                
+                </section>
+                
+            </div>
+            <div class="content">
+            <h1 id="title", style="background-color: rgb(214, 177, 10);">Transformers</h1>
+            <p>Transformers is a series of American science fiction action films based on the 
+                Transformers franchise, which began in the 1980s.</p>
+                <div class="details">
+                    <h6>A Netflix Original Film</h6>
+                    <h5 id="gen">Thriller</h5>
+                    <h4>2021</h4>
+                    <h3> id="rate"><span>IMDB</span><p>Action, 2021, <span>IMDB</span><i class="bi bi-star-fill> 9.6"> </h3>
+                </div>
+                <div> class="btns">
+                    <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
+                    <a href="#" id="download_main"> <i class="bi bi-cloud-arrow-down-fill"></i>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+</body>
+</html>
